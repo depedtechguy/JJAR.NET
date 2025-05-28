@@ -1,0 +1,105 @@
+body{
+    background-size: cover;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    height:5700px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  height: 500px;
+  padding: 20px;
+  margin-left: 220px; 
+}
+
+
+#section1 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+#section2 {
+  background-color: transparent;
+  font-family: sans-serif;
+  height:390px;
+  color: #fff;
+}
+#section3 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height:1000px;
+}
+
+#section4 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height: 1700px;
+}
+
+#section5 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height:950px;
+}
+
+#section6 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height: fit-content;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+  .text{
+    width:215px;
+    height: 190px;
+    background-color:transparent;
+    color: white;
+  }
+
+  .text2, .text4{
+    width:215px;
+    height: 175px;
+    background-color:transparent;
+    color: white;
+  }
+  .text3{
+    width: 600px;
+    background-color: transparent;
+    color: white;
+  }
+.cite{
+  justify-content: center;
+  display: flex;
+  margin-right: 90p;
+}
+ 

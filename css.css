@@ -1,0 +1,118 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(background.jpg);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar li {
+  margin-bottom: 10px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.section {
+  height: 500px;
+  padding: 20px;
+  margin-left: 220px; 
+}
+.section {
+  height: 500px;
+  padding: 20px;
+  margin-left: 220px; 
+}
+.text{
+  width:215px;
+  height: 225px;
+  background-color:transparent;
+  color: white;
+}
+#section1 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height: 590px;
+}
+#section2 {
+  background-color: transparent;
+  font-family: sans-serif;
+  height:450px;
+  color: #fff;
+}
+#section3 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height:400px;
+}
+#section4 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height: 660px;
+}
+#section5 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height:950px;
+}
+
+#section6 {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #fff;
+  height: 100px;
+}
+.t1 {
+  height:225px;
+   background-color:transparent;
+   color: white;
+}
+.t2{
+  width: 280px;
+  background-color:transparent;
+  color: white;
+}
+.t3{
+  height:200px;
+  width: 230px;
+  background-color: transparent;
+  color: white;
+}
+
+.t4{
+  height:300px;
+  width: 230px;
+  background-color: transparent;
+  color: white;
+}
+.t5{
+  height:180px;
+  width: 350px;
+  background-color: transparent;
+  color: white;
+}
+
+ html {
+    scroll-behavior: smooth;
+  }
+  .cite{
+    justify-content: center;
+    display: flex;
+    margin-right: 90px;
+  }
+   

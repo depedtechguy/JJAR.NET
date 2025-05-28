@@ -1,0 +1,122 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(background.jpg);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .section {
+    height: 500px;
+    padding: 20px;
+    margin-left: 220px; 
+  }
+  
+ 
+  #section1 {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    height: fit-content;
+  }
+  
+  #section2 {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    height: fit-content;
+  }
+  
+  #section3 {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    height: fit-content;
+  }
+  
+  #section4 {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    height: fit-content;
+  }
+  #section5 {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: white;
+    height: fit-content;
+  }
+.t1 , .t2, .t3{
+  width: 600px;
+  background-color: transparent;
+  color: white
+}
+.t4{
+  width: 650px;
+  background-color: transparent;
+  color: white;
+  height: 60px;
+
+}
+.t5 {
+  width: 350px;
+  height:80px;
+  background-color: transparent;
+  color: white
+}
+.t6{
+  width: 500px;
+  height:285px;
+  background-color: transparent;
+  color: white
+}
+ .t7{
+  width: 540px;
+  height: 65px;
+  background-color: transparent;
+  color: white
+}
+
+.t8{
+  width: 540px;
+  height: 30px;
+  background-color: transparent;
+  color: white
+}
+.t9{
+  height: 70px;
+  background-color: transparent;
+  color: white
+}
+
+.cite{
+  justify-content: center;
+  display: flex;
+  margin-right: 90p;
+}
+ 
+  html {
+    scroll-behavior: smooth;
+  }

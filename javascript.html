@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .quiz-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .quiz-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fefefe;
+    }
+
+    .question p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>JavaScript Basics Quiz</h1>
+    <div id="quiz"></div>
+  </div>
+
+  <script>
+    class QuizApp {
+      constructor(containerId, questions) {
+        this.container = document.getElementById(containerId);
+        this.questions = questions;
+        this.renderQuiz();
+      }
+
+      renderQuiz() {
+        this.questions.forEach((q, index) => {
+          const div = document.createElement("div");
+          div.className = "question";
+          div.innerHTML = `<p><strong>Q${index + 1}:</strong> ${q.question}</p>`;
+
+          q.options.forEach((opt, i) => {
+            const id = `q${index}_opt${i}`;
+            div.innerHTML += `
+              <label>
+                <input type="radio" name="q${index}" value="${i}" id="${id}">
+                ${opt}
+              </label>`;
+          });
+
+          const btn = document.createElement("button");
+          btn.textContent = "Check Answer";
+          const feedback = document.createElement("div");
+          feedback.className = "feedback";
+
+          btn.onclick = () => {
+            const selected = document.querySelector(`input[name="q${index}"]:checked`);
+            if (selected) {
+              const isCorrect = parseInt(selected.value) === q.answer;
+              feedback.textContent = isCorrect ? "✅ Correct!" : "❌ Incorrect.";
+              feedback.style.color = isCorrect ? "green" : "red";
+            } else {
+              feedback.textContent = "⚠️ Please select an answer.";
+              feedback.style.color = "orange";
+            }
+          };
+
+          div.appendChild(btn);
+          div.appendChild(feedback);
+          this.container.appendChild(div);
+        });
+      }
+    }
+
+    const jsQuestions = [
+      {
+        question: "What is the correct syntax to output 'Hello World' in JavaScript?",
+        options: ["print('Hello World')", "console.log('Hello World')", "echo('Hello World')"],
+        answer: 1
+      },
+      {
+        question: "Which keyword is used to declare a variable in JavaScript?",
+        options: ["var", "int", "string"],
+        answer: 0
+      },
+      {
+        question: "How do you write a comment in JavaScript?",
+        options: ["<!-- comment -->", "// comment", "# comment"],
+        answer: 1
+      },
+      {
+        question: "Which operator is used to assign a value to a variable?",
+        options: ["=", "==", "==="],
+        answer: 0
+      },
+      {
+        question: "What is the correct way to write an array in JavaScript?",
+        options: ["var colors = (1:'red', 2:'blue')", "var colors = ['red', 'blue']", "var colors = 'red', 'blue'"],
+        answer: 1
+      },
+      {
+        question: "Which method can be used to find the length of a string?",
+        options: ["length()", "getLength()", "length"],
+        answer: 2
+      },
+      {
+        question: "How do you create a function in JavaScript?",
+        options: ["function myFunction()", "def myFunction()", "create myFunction()"],
+        answer: 0
+      },
+      {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        options: ["onmouseover", "onchange", "onclick"],
+        answer: 2
+      },
+      {
+        question: "How do you round the number 7.25 to the nearest integer?",
+        options: ["Math.round(7.25)", "round(7.25)", "Math.rnd(7.25)"],
+        answer: 0
+      },
+      {
+        question: "Which of the following is a JavaScript data type?",
+        options: ["float", "boolean", "decimal"],
+        answer: 1
+      }
+    ];
+
+    new QuizApp("quiz", jsQuestions);
+  </script>
+
+</body>
+</html>

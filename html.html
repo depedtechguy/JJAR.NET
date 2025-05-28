@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="html.css">
+    <title>Hypertext Markup Language</title>
+
+   </head>
+<body>
+    <body>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#section1">HTML Tutorial</a></li>
+          <li><a href="#section2">HTML Introduction</a></li>
+          <li><a href="#section3">HTML Editors</a></li>
+          <li><a href="#section4">HTML Basic</a></li>
+          <li><a href="#section5">HTML Elements</a></li>
+          <li><a href="#section6">HTML Attributes</a></li>
+          <li><a href="css.html">-> CSS</a></li>
+        </ul>
+      </div>
+      
+        <div id="section1" class="section">
+          <h1>HTML Tutorial</h1>
+          <p>HTML is the standard markup language for Web pages.</p>
+          <p>With HTML you can create your own Website.</p>
+          <p>HTML is easy to learn - You will enjoy it along the way!</p><br>
+          <h2>Easy Learning with HTML</h2>
+          <P> Try this with your IDE.</P>
+            <textarea class='text'>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+            </textarea>
+        </div>
+      
+        <div id="section2" class="section">
+          <h1>What is HTML?</h1>
+          <ul>
+            <li>HTML stands for Hyper Text Markup Language</li><br>
+            <li>HTML is the standard markup language for creating Web pages</li><br>
+            <li>HTML describes the structure of a Web page</li><br>
+            <li>HTML consists of a series of elements</li><br>
+            <li>HTML elements tell the browser how to display the content</li><br>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li><br>
+            <li>It is the backbone of the World Wide Web, enabling the exchange of information and facilitating the creation of web pages accessible through browsers.</li><br>
+            <li>By using HTML, web developers can create interactive and dynamic websites by combining it with other technologies like CSS and JavaScript.</li>
+          </ul>
+        </div>
+      
+        <div id="section3" class="section">
+          <h1>HTML Editors</h1>
+          <h3>Learn HTML Using Notepad or Visual Code Studio</h3>
+          <p>Web pages can be created and modified by using professional HTML editors.</p>
+          <p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).</p>
+          <p>We believe that using a simple text editor is a good way to learn HTML.</p>
+          <p>Follow the steps below to create your first web page with Notepad or TextEdit.</p><br><br>
+
+          <h2>Step 1: Open Notepad (PC)</h2>
+          <p>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.</p><br><br>
+
+          <h2>Write some HTML</h2>
+          <p>Write or copy the following HTML code into Notepad:</p>
+          <textarea class='text'>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+</textarea>
+        <h2>Step 3: Save the HTML Page</h2>
+        <p>Save the file on your computer. Select File > Save as in the Notepad menu.</p>
+        <p>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</p><br><br>
+        <h2>Step 4: View the HTML Page in Your Browser</h2>
+        <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+        </div>
+        </div>
+
+        <div id="section4" class="section">
+          <h1>HTML Basic Examples</h1>
+          <p>In this chapter we will show some basic HTML examples.</p><br><br>
+          <h2> HTML Documents</h2>
+          <p>All HTML documents must start with a document type declaration: !DOCTYPE html>.</p>
+          <p>The HTML document itself begins with html> and ends with /html>.</p>
+          <p>The visible part of the HTML document is between body> and /body>.</p><br>
+          <h2>Example</h2>
+          <textarea class="text2">
+<!DOCTYPE html>
+<html>
+<body>
+            
+<h1>My First Heading</h1>
+<p>My first paragraph.</p><br><br>
+            
+</body>
+</html>
+</textarea>
+         <h2>The !DOCTYPE> Declaration</h2>
+         <p>The !DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+         <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+         <p>The !DOCTYPE> declaration is not case sensitive</p><br><br>
+         <h2> HTML Headings </h2>
+         <p>HTML headings are defined with the h1 to h6 tags. <p>
+         <p> h1 defines the most important heading. h6 defines the least important heading: </p> <br><br>
+         <h2> HTML Paragraphs</h2>
+         <P> HTML paragraphs are defined with the p> tag</P><br><br>
+         <h2> HTML Links</h2>
+         <p>HTML links are defined with the a> tag</p><br><br>
+         <h2> HTML Images</h2>
+         <p> HTML images are defines with the img> tag.</p>
+         <p>The source file (src), alternative text (alt), width, and height are provided as attributes:</p>
+          <textarea class="text3">
+<img src="web.jpg" alt="W3Schools.com" width="104" height="142">
+          </textarea>
+          <h2>How to View HTML Source</h2><br>
+          <h4>View HTML Source Code:</h4>
+          <p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.</p><br>
+          <h4>Inspect an HTML Element:</h4>
+          <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+        </div>
+        <div id="section5" class="section">
+          <h1>HTML Elements</h1>
+          <p>An HTML element is defined by a start tag, some content, and an end tag.</p><br><br>
+          <h2>Nested HTML Elements</h2>
+          <p> HTML elements can be nested (this means that elements can contain other elements).</p>
+          <p>All HTML documents consist of nested HTML elements.</p>
+          <p>The following example contains four HTML elements (html>, body>, h1> and p>)</p>
+          <textarea class="text4">
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+          </textarea>
+         <h2> Example Explained</h2>
+         <p>The <b>html</b> element is the root element and it defines the whole HTML document.</p>
+         <p>It has a start tag <b>html </b> and an end tag <b>/html </b>.</p>
+         <p>Then, inside the html  element there is a body> element:</p>
+         <p>The body> element defines the document's body.</p>
+         <p>It has a start tag body> and an end tag <b>/body</b>.</p>
+         <p>Then, inside the body> element there are two other elements: h1> and p></p>
+         <p>The <b>h1</b> element defines a heading.</p>
+         <p>The <b>p</b> element defines a paragraph.</p><br>
+         <h2>Never Skip the End Tag</h2>
+         <p>Some HTML elements will display correctly, even if you forget the end tag</p>
+        </div>
+        <div id="section6" class="section">
+          <h1>HTML Attributes</h1>
+          <p>HTML attributes provide additional information about HTML elements.</p>
+          <ul>
+            <li>All HTML elements can have attributes</li><br>
+            <li>Attributes provide additional information about elements</li><br>
+            <li>Attributes are always specified in the start tag</li><br>
+            <li>Attributes usually come in name/value pairs like: name="value"</li>
+          </ul>
+          <h2>The href Attribute</h2>
+          <p>The <b>a</b>  tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to</p>
+          <h2>The src Attribute</h2>
+          <p>The <b>img</b> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed</p> <br>
+          <p>There are two ways to specify the URL in the src attribute:</p><br>
+          <p>1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.website.com/images/img_girl.jpg".</p><br>
+          <p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+          <h2>The width and height Attributes</h2>
+          <p>The <b>img</b> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</p>
+          <textarea class="text3">
+<img src="img_girl.jpg" alt="Girl with a jacket">
+             </textarea>
+             <h2>The lang Attribute</h2>
+             <p>You should always include the lang attribute inside the html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.The following example specifies English as the language.</p>
+             <p class="cite"><cite>Credits to W3Schools.com</cite></p>
+        </div>
+       
+</body>
+</html>
+
+
+
+
+

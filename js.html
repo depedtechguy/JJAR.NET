@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="js.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="#section1">JavaScript Tutorial</a></li>
+          <li><a href="#section2">JavaScript Introduction</a></li>
+          <li><a href="#section3">JavaScript Where to Add</a></li>
+          <li><a href="#section4">JavaScript Statements</a></li>
+          <li><a href="#section5">JavaScript Syntax</a></li>
+        </ul>
+      </div>
+    
+      <div id="section1" class="section">
+        <h1>JavaScript Tutorial</h1>
+        <p>JavaScript is the world's most popular programming language</p>
+        <p>JavaScript is the programming language of the Web.</p>
+      </div>
+    
+      <div id="section2" class="section">
+        <h1>JavaScript can change HTML content</h1>
+        <p>One of many JavaScript HTML methods is getElementById().</p>
+        <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+        <p>Example</p><br>
+        <textarea class="t1">
+document.getElementById("demo").innerHTML = "Hello JavaScript";          
+        </textarea><br>
+         <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+         <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+         <p>Example</p><br>
+         <textarea class="t2">
+document.getElementById("demo").style.fontSize = "35px";
+         </textarea><br>
+         <h2>JavaScript can hide HTML Elements</h2>
+         <p>Hiding HTML elements can be done by changing the display style:</p>
+         <p>Example</p><br>
+         <textarea class="t3">
+document.getElementById("demo").style.display = "none";
+                   </textarea><br>
+        <h2>JavaScript Can Show HTML Elements</h2>
+         <p>Showing hidden HTML elements can also be done by changing the display style: </p>
+         <p>Example</p><br>
+         <textarea class="t3">
+document.getElementById("demo").style.display = "block";
+         </textarea>
+        </div>
+      <div id="section3" class="section">
+        <h1>Where/How to add JS into HTML</h1><br>
+        <h2> The script Tag </h2>
+        <p>In HTML, JavaScript code is inserted between script> and /script> tags.</p>
+        <p>Example</p><br>
+        <textarea class="t4">
+<script>
+ document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>          
+        </textarea>     
+      <h2>JavaScript Functions and Events</h2>
+      <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.</p>
+      <p>For example, a function can be called when an event occurs, like when the user clicks a button.</p><br>
+      <h2>JavaScript in head or body tag</h2>
+      <p>You can place any number of scripts in an HTML document.</p>
+      <p>Scripts can be placed in the body, or in the head section of an HTML page, or in both.</p><br>
+      <h2>JavaScript in head section</h2>
+      <p>In this example, a JavaScript function is placed in the head section of an HTML page.</p>
+      <p>Example</p><br>
+      <textarea class="t6">
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+        
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+        
+</body>
+</html>
+      </textarea>
+      <h2>JavaScript in body section</h2>
+      <p>In this example, a JavaScript function is placed in the body section of an HTML page.</p>
+      <p>Example</p><br>
+      <textarea class="t6">
+<!DOCTYPE html>
+<html>
+<body>
+        
+<h2>Demo JavaScript in Body</h2>
+        
+<p id="demo">A Paragraph</p>
+        
+<button type="button" onclick="myFunction()">Try it</button>
+        
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+        
+</body>
+</html>
+      </textarea><br>
+     <h1>External JavaScript</h1>
+     <p>Scripts can also be placed in external files:</p>
+     <p>External file:mySctipt.js</p><br>
+     <textarea class="t7">
+function myFunction() {
+document.getElementById("demo").innerHTML = "Paragraph changed.";
+}     
+     </textarea>
+      <p>External scripts are practical when the same code is used in many different web pages.</p>
+      <p>JavaScript files have the file extension .js.</p>
+      <p>To use an external script, put the name of the script file in the src (source) attribute of a script tag:</p>
+      <p>Example</p><br>
+      <textarea class="t8">
+<script src="myScript.js"></script>        
+      </textarea>
+    </div>
+    <div id="section4" class="section">
+      <h1>JavaScript Programs</h1>
+      <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+      <p>In a programming language, these programming instructions are called statements.</p>
+      <p>A JavaScript program is a list of programming statements.</p><br>
+      <h2>JavaScript Statements</h2>
+      <p>JavaScript statements are composed of:</p>
+      <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+      <p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+      <p>Example</p> <br>
+      <textarea class="t4">
+<script>
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+</script>          
+        </textarea>
+       <p>Most JavaScript programs contain many JavaScript statements.</p>
+       <p>The statements are executed, one by one, in the same order as they are written.</p><br>
+       <h2>Semicolons ;</h2>
+       <p> separate JavaScript statements.</p>
+       <p>Add a semicolon at the end of each executable statement:</p><br>
+       <textarea class="t5">
+let a, b, c;  // Declare 3 variables
+a = 5;        // Assign the value 5 to a
+b = 6;        // Assign the value 6 to b
+c = a + b;    // Assign the sum of a and b to c                  
+       </textarea>
+       <p>When separated by semicolons, multiple statements on one line are allowed:</p><br>
+       <h2>JavaScript Keywords</h2>
+       <p>var : Declares a variable</p>
+       <p>let	: Declares a block variable</p>
+       <p>const :	Declares a block constant</p>
+       <p>if :	Marks a block of statements to be executed on a condition </p>
+       <p>switch :	Marks a block of statements to be executed in different cases</p>
+       <p>for : Marks a block of statements to be executed in a loop </p>
+       <p>function :	Declares a function </p>
+       <p>return :	Exits a function</p>
+       <p>try	: Implements error handling to a block of statements</p>
+    </div>   
+    <div id="section5" class="section">
+      <h1>JavaScript Syntax</h1><br>
+     <h3> JavaSctipt Values</h3>
+     <p>The JavaScript syntax defines two types of values:</p>
+     <p>Fixed values</p>
+     <p>Variable values</p><br>
+     <p>Fixed values are called Literals.</p>
+     <p>Variable values are called Variables.</p><br>
+     <h2>JavaScript Literals</h2>
+     <P> The two most important syntax rules for fixed values are:</P>
+     <p>1. Numbers are written with or without Decimals</p>
+     <textarea class="t9">
+10.50    
+
+1001
+     </textarea>
+     <p>2. Strings are text, written within double of single quotes:</p>
+     <textarea class="t9">
+"Joy"
+
+'Mingo'
+           </textarea>    
+           <h1> JavaScript Variables</h1>
+           <p> In a programming language, variables are used to store data values.</p> 
+           <P>JavaScript uses the keywords var, let and const to declare variables.</P>
+           <p>An equal sign is used to assign values to variables.</p>
+           <p>In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p><br>
+           <textarea class="t9">
+let x;
+
+x = 6;      
+           </textarea>
+           <p class="cite"><cite>Credits to W3Schools.com</cite></p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="css.css">
+    <title>Cascading Style Sheets</title>
+</head>
+<body>
+    <body>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+                        <li><a href="#section1">CSS Tutorial</a></li>
+            <li><a href="#section2">CSS Introductions</a></li>
+            <li><a href="#section3">CSS Syntax</a></li>
+            <li><a href="#section4">CSS Selectors</a></li>
+            <li><a href="#section5">How to add CSS</a></li>
+            <li><a href="js.html">-> JavaScipt</a></li>
+          </ul>
+        </div>
+      
+        <div id="section1" class="section">
+          <h1>CSS Tutorial</h1>
+          <p>CSS is the language we use to style an HTML document.</p>
+          <p>CSS describes how HTML elements should be displayed.</p>
+          <p>This tutorial will teach you CSS from basic to advanced.</p><br>
+          <h2>Examples in Each Chapter</h2>
+          <P> This CSS tutorial contains hundreds of CSS examples.</P>
+            <h3>CSS Example</h3>
+            <p>Add this on the first HTML example!</p>
+            <textarea class='text'>
+<style>              
+body {
+background-color: lightblue;
+}
+ h1 {
+color: white;
+text-align: center;
+}
+p {
+font-family: verdana;
+font-size: 20px;
+}
+</style>
+              </textarea>
+        </div>
+      
+        <div id="section2" class="section">
+          <h1>CSS Introduction</h1>
+          <p>CSS is the language we use to style a Web page.</p>
+          <h3>What is CSS?</h3>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets </li><br>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li><br>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li><br>
+            <li>External stylesheets are stored in CSS files</li><br>
+            <li>CSS is defined by using the style tag inside the head of your html file.</li><br>
+            <li>CSS is a language that styles web pages. It has selectors to target elements (classes, IDs, types, etc.) and properties to control their appearance (size, color, position, etc.).</li><br>
+            <li>CSS enables responsive layouts, device optimization, and enhanced user experiences through visually appealing interfaces. It's a fundamental technology in web development and widely supported by modern browsers</li><br>
+            <li>CSS uses a cascading system where multiple style rules can be applied to the same element. The browser determines the rule precedence based on specificity, inheritance, and order. This allows for efficient styling and easy updates across multiple elements.</li><br>
+          </ul>
+        </div>
+      
+        <div id="section3" class="section">
+          <h1>CSS Syntax</h1>
+          <p>A CSS rule consists of a selector and a declaration block.</p>
+          <h3>Example</h3><br>
+          <textarea class="t2">
+h1 {color:blue; font-size:12px;}
+          </textarea>
+          <p>The selector points to the HTML element you want to style.</p>
+          <p>The declaration block contains one or more declarations separated by semicolons.</p>
+          <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+          <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+          <p>Like the example above all the p> elements will have a font size of 12 pixels, with a blue text color</p>
+        </div>
+
+        <div id="section4" class="section">
+            <h1>CSS Selectors</h1>
+            <p>A CSS selector selects the HTML element(s) you want to style.</p>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>We can divide CSS selectors into five categories:</p>
+            <ul>
+              <li>Simple selectors (select elements based on name, id, class)</li><br>
+              <li>Combinator selectors (select elements based on a specific relationship between them)</li><br>
+              <li>Pseudo-class selectors (select elements based on a certain state)</li><br>
+              <li>Pseudo-elements selectors (select and style a part of an element)</li><br>
+              <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <h2>The CSS id Selector</h2>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+            <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p><br>
+            <h2>The CSS class Selector</h2>
+            <p>The class selector selects HTML elements with a specific class attribute.</p>
+            <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+          </div>
+
+          <div id="section5" class="section">
+            <h1>How to add CSS in your HTML</h1>
+            <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+            <h2>Three Ways to Insert CSS</h2>
+            <p>There are three ways of adding a style sheet to your HTML</p>
+            <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+            <ul>
+              <li>External CSS</li>
+              <li>Internal CSS</li>
+              <li>Inline CSS</li>
+            </ul>
+            <h2>External CSS</h2>
+            <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+            <p>Each HTML page must include a reference to the external style sheet file inside the link> element, inside the head section.></p>
+            <h3>Example</h3>
+            <p>External styles are defined within the link> element, inside the head> section of an HTML page:</p>
+            <textarea class="t3">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+              
+</body>
+</html>
+            </textarea>
+            <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+            <p>The external .css file should not contain any HTML tags.</p>
+            <h2>Internal CSS</h2>
+            <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+            <p>The internal style is defined inside the style> element, inside the head section.</p><br>
+            <h3>Example</h3>
+            <textarea class="t4">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: linen;
+}
+              
+h1 {
+color: maroon;
+margin-left: 40px;
+}
+</style>
+<body>
+              
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+              
+</body>
+</textarea>
+           <h2>Inline CSS</h2>
+           <p>An inline style may be used to apply a unique style for a single element.</p>
+           <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+           <p>Example</p>
+           <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+           <textarea class="t5">
+<!DOCTYPE html>
+<html>
+<body>
+            
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+            
+</body>
+</html>           
+           </textarea>
+           <p>An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p>
+           <p class="cite"><cite>Credits to W3Schools.com</cite></p>
+          </div>
+           <div id="section5" class="section">
+
+           </div>
+   </body>
+       </html>
